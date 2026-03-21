@@ -16,7 +16,7 @@ public class BookShelfReverseYearIterator implements Iterator<Book> {
             sortedBooks[i] = bookShelf.getBookAt(i);
         }
 
-        // 2. 출판연도 내림차순(최신순) 정렬 by using bubble sort
+        // 2. 출판연도 내림차순(최신순) 정렬 by using 버블 정렬
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size - 1 - i; j++) {
                 // 뒤에 있는 책의 연도가 더 크면 자리 바꿈

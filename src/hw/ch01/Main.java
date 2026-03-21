@@ -29,7 +29,7 @@ public class Main {
         }
         System.out.println(); // just for 줄바꿈
 
-        // [4-3] 출판연도 역순 iterator를 테스트 (최신순)
+        // [4-3] 출판연도 역순(최신순) iterator를 테스트
         System.out.println("===== [4-3] 출판연도 역순 테스트 (최신 책부터 출력됨) =====");
         Iterator<Book> yearIt = bookShelf.iteratorByYear();
         while (yearIt.hasNext()) {
