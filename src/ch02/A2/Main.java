@@ -17,3 +17,5 @@ public class Main {
         }
     }
 }
+// ch02 > A2 > file.txt 위치에 둔 채로 run할 시 No such file or directory 오류
+// 따라서 file.txt 위치를 DP_2026-1 바로 아래, src와 같은 위치에 둬야 newfile.txt is created로 정상 처리됨

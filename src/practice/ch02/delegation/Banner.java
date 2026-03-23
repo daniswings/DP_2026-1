@@ -1,6 +1,6 @@
-package practice.ch02.inheritance;
+package practice.ch02.delegation;
 
-// Banner 클래스는 이미 존재하는 클래스 (=Vendor 클래스 =강아지(멍멍() 제공), 수정 불가)
+// 이미 제공되는 클래스
 public class Banner {
     private String string;
 
@@ -15,4 +15,5 @@ public class Banner {
     public void showWithAster() {
         System.out.println("*" + string + "*");
     }
+
 }
