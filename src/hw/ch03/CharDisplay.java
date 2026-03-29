@@ -1,29 +1,32 @@
-package ch03.Sample;
-
+package hw.ch03;
 
 public class CharDisplay extends AbstractDisplay {
-    private char ch; // 표시해야 하는 문자 
+    private char ch;
 
-    // 생성자 
+    // for 기존 코드와 호환성 유지: 반복 횟수 명시 x 시 -> 기본값 5 사용
     public CharDisplay(char ch) {
+        super(5); // 부모 생성자 호출
         this.ch = ch;
     }
 
+    // 반복 횟수를 인자로 받는 생성자 추가
+    public CharDisplay(char ch, int repeatCount) {
+        super(repeatCount); 
+        this.ch = ch;
+    }
+    
     @Override
     public void open() {
-        // 시작 문자열 "<<"를 표시한다
         System.out.print("<<");
     }
 
     @Override
     public void print() {
-        // 필드에 기억해 둔 문자를 1회 표시한다 
         System.out.print(ch);
     }
 
     @Override
     public void close() {
-        // 종료 문자열 ">>"를 표시한다 
         System.out.println(">>");
     }
 }
