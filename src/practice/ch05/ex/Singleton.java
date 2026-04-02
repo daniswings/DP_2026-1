@@ -9,7 +9,7 @@ public class Singleton {
         slowdown();
     }
 
-    public static Singleton getInstance() { //getInstance가 만들어질 때 
+    public static synchronized Singleton getInstance() { //getInstance가 만들어질 때 
         if (singleton == null) { // singleton이 null이면 / 처음 호출되는지 검사
             singleton = new Singleton(); // Singleton 객체를 하나 만들어서 singleton에 저장해라
         }
