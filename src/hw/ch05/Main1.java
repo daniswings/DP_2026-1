@@ -16,7 +16,7 @@ public class Main1 {
             System.out.println("✓ 동일한 인스턴스");
         } else {
             System.out.println("X 다른 인스턴스");
-        }
+        } 
         
         System.out.println();
         System.out.println("========== 로그 출력 1 ==========");
