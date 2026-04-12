@@ -21,7 +21,7 @@ public class Main {
         manager.register("message", mbox);
         manager.register("border", bline);
 
-        // 생성과 사용
+        // 생성 & 사용
         System.out.println("===== Test 1: UnderlinePen =====");
         Product p1 = manager.create("underline");
         p1.use("Welcome");
@@ -39,7 +39,7 @@ public class Main {
         System.out.println("\n===== Clone Test =====");
         Product p3_copy = manager.create("border");
         
-        // 원본 객체(p3)와 복사된 객체(p3_copy)가 서로 다른 인스턴스인지 메모리 주소값 검증
+        // 원본 객체(p3) & 복사된 객체(p3_copy)가 서로 다른 인스턴스인지 메모리 주소값 검증
         if (p3 != p3_copy) {
             System.out.println("✓ 정상적으로 복사됨 (서로 다른 인스턴스)");
         } else {
