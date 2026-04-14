@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class WinningStrategy implements Strategy {
     private Random random;
-    private boolean won = false;
+    private boolean won = false; // 원래도 boolean은 항상 false로 초기되므로 생략해도 ok
     private Hand prevHand; // 이전에 낸 손
 
     public WinningStrategy(int seed) {
