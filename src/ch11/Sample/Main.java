@@ -3,15 +3,22 @@ package ch11.Sample;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Making root entries...");
+
+        // 디렉터리 4개 만듦
         Directory rootdir = new Directory("root");
         Directory bindir = new Directory("bin");
         Directory tmpdir = new Directory("tmp");
         Directory usrdir = new Directory("usr");
+
+        // 루트 디렉터리 밑에 3개의 디렉터리를 추가
         rootdir.add(bindir);
         rootdir.add(tmpdir);
         rootdir.add(usrdir);
+
+
         bindir.add(new File("vi", 10000));
         bindir.add(new File("latex", 20000));
+
         rootdir.printList();
         System.out.println();
 
@@ -19,14 +26,19 @@ public class Main {
         Directory youngjin = new Directory("youngjin");
         Directory gildong = new Directory("gildong");
         Directory dojun = new Directory("dojun");
+
         usrdir.add(youngjin);
         usrdir.add(gildong);
         usrdir.add(dojun);
+
         youngjin.add(new File("diary.html", 100));
         youngjin.add(new File("Composite.java", 200));
+
         gildong.add(new File("memo.tex", 300));
+
         dojun.add(new File("game.doc", 400));
         dojun.add(new File("junk.mail", 500));
+        
         rootdir.printList();
     }
 }
