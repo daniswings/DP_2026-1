@@ -6,10 +6,10 @@ public class Main {
         banner.showWithParen();
         banner.showWithAster();
 
-         System.out.println("어댑터 이용");
-         Print print = new PrintBannerAdapter01("Hellow, World!");
-         print.printWeak();
-         print.printStrong();
+        System.out.println("어댑터 이용");
+        Print print = new PrintBannerAdapter01("Hellow, World!");
+        print.printWeak();
+        print.printStrong();
 
     }
 }
