@@ -35,7 +35,8 @@ public class ProbStrategy implements Strategy {
     private int getSum(int handvalue) {
         int sum = 0;
         for (int i = 0; i < 3; i++) {
-            sum += history[handvalue][i]; // 행 번호는 고정, 열 번호가 0, 1, 2로 바뀜 -> 결국 그 행의 값을 다 더하는 역할 수행
+            // 행 번호는 고정, 열 번호가 0, 1, 2로 바뀜 -> 결국 그 행의 값을 다 더하는 역할 수행
+            sum += history[handvalue][i]; 
         }
         return sum;
     }

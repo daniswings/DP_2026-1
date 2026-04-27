@@ -8,7 +8,8 @@ public class Main {
         d1.open();
 
         // StringDisplay d2 = new StringDisplay("Hello, world.");
-        AbstractDisplay d2 = new StringDisplay("Hello, world."); // 위와 마찬가지로 StringDisplay 대신 AbstractDisplay로 선언해도 가능 (LSP 원칙이 잘 지켜짐)
+        // 위와 마찬가지로 StringDisplay 대신 AbstractDisplay로 선언해도 가능 (LSP 원칙이 잘 지켜짐)
+        AbstractDisplay d2 = new StringDisplay("Hello, world.");
         d2.display();
         d2.open();
     }

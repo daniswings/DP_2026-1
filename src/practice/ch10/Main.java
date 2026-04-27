@@ -44,8 +44,10 @@ public class Main {
         }
 
         System.out.println("Total result:");
-        System.out.println(player1); // 굳이 명시하지 않아도 player1의 toString()이 자동으로 호출됨
-        System.out.println(player2); // 출력 결과 ProbStrategy가 WinningStrategy보다 승률이 높음 -> ProbStrategy가 WinningStrategy보다 더 좋은 전략이라는 것을 알 수 있음
-    }
+        // 굳이 명시하지 않아도 player1의 toString()이 자동으로 호출됨
+        System.out.println(player1); 
+        // 출력 결과 ProbStrategy가 WinningStrategy보다 승률이 높음 
+        // -> ProbStrategy가 WinningStrategy보다 더 좋은 전략이라는 것을 알 수 있음
+        System.out.println(player2); 
 }
 

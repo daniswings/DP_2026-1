@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Directory extends Entry {
     private String name;
-    private List<Entry> directory = new ArrayList<>(); // directory: 자식들을 보관하는 리스트. Entry는 부모 타입 - 디렉터리와 파일 모두 담을 수 있다
+    // directory: 자식들을 보관하는 리스트. Entry는 부모 타입 - 디렉터리와 파일 모두 담을 수 있다
+    private List<Entry> directory = new ArrayList<>();
 
     public Directory(String name) {
         this.name = name;
@@ -20,7 +21,8 @@ public class Directory extends Entry {
     public int getSize() { // 모든 자식의 크기를 더함
         int size = 0; // 꼭 초기화 필요
         for (Entry entry: directory) { // 형식 - (원소 변수: 컬렉션)으로 구성됨
-            size += entry.getSize(); // 세 줄 위에서 getSize 호출했는데 여기서 또 호출됨 -> 이것이 바로 재귀적 호출임
+            // 세 줄 위에서 getSize 호출했는데 여기서 또 호출됨 -> 이것이 바로 재귀적 호출임
+            size += entry.getSize(); 
             // 꺼내온 애가 또 directory면 그 안에 또 자식이 있을 수 있기 때문에 getSize가 또 호출됨
         }
         return size;

@@ -27,7 +27,8 @@ public class MessageBox implements Product {
     public Product createCopy() {
         Product p = null;
         try {
-            p = (Product)clone(); // 자기 복제 메소드, 만약 Product 없다면 Object타입이므로 Product 넣어 형변환 필요
+            // 자기 복제 메소드, 만약 Product 없다면 Object타입이므로 Product 넣어 형변환 필요
+            p = (Product)clone(); 
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }

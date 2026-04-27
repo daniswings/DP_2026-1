@@ -11,7 +11,8 @@ public class PrintBannerAdapter02 extends Print{
 
     @Override
     public void printWeak() {
-        banner.showWithParen(); // Banner 클래스의 메서드를 호출하여 기능을 수행 (Main에서 printWeak 호출 시 printWeak는 Banner에게 위임)
+        // Banner 클래스의 메서드를 호출하여 기능을 수행 (Main에서 printWeak 호출 시 printWeak는 Banner에게 위임)
+        banner.showWithParen();
     }
 
     @Override

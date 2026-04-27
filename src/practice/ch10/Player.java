@@ -2,13 +2,16 @@ package practice.ch10;
 
 public class Player {
     private String name;
-    private Strategy strategy; // 가장 중요 - 부모 타입인 Player는 모든 종류의 자식 전략 객체를 가리킬 수 있다 -> 교체가 쉽다 => 다형성 (다이어그램상 마름모로 표현됨)
+    // 가장 중요 - 부모 타입인 Player는 모든 종류의 자식 전략 객체를 가리킬 수 있다 
+    // -> 교체가 쉽다 => 다형성 (다이어그램상 마름모로 표현됨)
+    private Strategy strategy; 
     private int wincount;
     private int losecount;
     private int gamecount;
 
     // 이름과 전략을 받아서 플레이어를 만든다 
-    public Player(String name, Strategy strategy) { // 부모 타입이므로 모든 전략 객체 받을 수 있음
+    // 부모 타입이므로 모든 전략 객체 받을 수 있음
+    public Player(String name, Strategy strategy) { 
         this.name = name;
         this.strategy = strategy;
     }

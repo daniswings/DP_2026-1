@@ -21,7 +21,8 @@ public class File extends Entry {
 
     @Override
     protected void printList(String prefix) {
-        System.out.println(prefix + "/" + this); // this는 this.toString()과 같음
+        // this는 this.toString()과 같음
+        System.out.println(prefix + "/" + this); 
     }
 }
 

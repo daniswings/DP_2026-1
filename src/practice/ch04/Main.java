@@ -1,6 +1,7 @@
 package practice.ch04;
 
-import practice.ch04.framework.Product;// Main과 IDCard는 서로 다른 패키지에 속하므로 import 필요
+// Main과 IDCard는 서로 다른 패키지에 속하므로 import 필요
+import practice.ch04.framework.Product;
 import practice.ch04.idcard.IDCardFactory;
 
 public class Main {

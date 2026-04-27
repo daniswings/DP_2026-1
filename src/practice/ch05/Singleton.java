@@ -11,7 +11,8 @@ public class Singleton {
     }
 
     // (2) Singleton 객체를 얻어갈 수 있는 메소드를 정의함
-    public static Singleton getInstance() { // static으로 해줘야 클래스에 속해 객체 생성하지 않고도 호출 가능
+    // static으로 해줘야 클래스에 속해 객체 생성하지 않고도 호출 가능
+    public static Singleton getInstance() { 
         return singleton; // (3)을 만든 후엔 Singleton() -> singleton으로 바꿔야 함
     }
 }
