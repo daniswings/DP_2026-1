@@ -15,7 +15,7 @@ public class Main {
 
         root.add(bin);
         root.add(usr);
-        root.add(home);
+        root.add(home); 
 
         bin.add(new File("bash", 120));
         bin.add(new File("gcc.exe", 200));
