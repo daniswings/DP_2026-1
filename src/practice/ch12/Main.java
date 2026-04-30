@@ -1,8 +1,9 @@
 package practice.ch12;
 
-import ch12.Q2.SideBorder;
 
 public class Main {
+    public static void main(String[] args) {
+
     Display d1 = new StringDisplay("Hello, world.");
     d1.show();
 
@@ -17,4 +18,6 @@ public class Main {
 
     Display d5 = new SideBorder(d4, '/');
     d5.show();
+
+    }
 }
