@@ -99,9 +99,9 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
     // textUser 또는 textPass의 변경이 있다 
     // 각 Colleage의 활성/비활성을 판정한다
     private void userpassChanged() {
-        if (textUser.getText().length() > 0) {
+        if (textUser.getText().length() > 0) { // 얘를 >=4로 바꾸면 사용자 이름에서 4글자 이상 입력 시에만 ok버튼 활성화
             textPass.setColleagueEnabled(true);
-            if (textPass.getText().length() > 0) {
+            if (textPass.getText().length() > 0) { // 얘를 >=4로 바꾸면 비밀번호에서 4글자 이상 입력 시에만 ok버튼 활성화
                 buttonOk.setColleagueEnabled(true);
             } else {
                 buttonOk.setColleagueEnabled(false);
