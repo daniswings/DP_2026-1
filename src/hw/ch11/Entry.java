@@ -11,6 +11,7 @@ public abstract class Entry {
 
     public abstract String getName(); // 이름 가져옴
     public abstract int getSize(); // 크기 가져옴
+    
     // search 추상 메서드 추가 - 모든 파일 & 디렉터리가 공통으로 가져야 하는 메서드
     public abstract List<Entry> search(String keyword);
 
