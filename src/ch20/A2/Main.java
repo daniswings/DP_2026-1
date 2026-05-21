@@ -1,7 +1,7 @@
 package ch20.A2;
 
 public class Main {
-    private static BigString[] bsarray = new BigString[10000];
+    private static BigString[] bsarray = new BigString[10000]; // 원소 10000개 만듦
 
     public static void main(String[] args) {
         System.out.println("공유한 경우:");
