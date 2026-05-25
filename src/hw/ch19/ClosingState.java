@@ -1,11 +1,5 @@
 package hw.ch19;
 
-import ch19.A4.Context;
-import ch19.A4.State;
-import ch19.A4.DayState;
-import ch19.A4.NightState;
-import ch19.A4.UrgentState;
-
 public class ClosingState implements State {
     // 인스턴스를 하나만 생성하는 Singleton 패턴
     private static ClosingState singleton = new ClosingState();

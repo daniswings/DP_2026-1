@@ -1,10 +1,5 @@
 package hw.ch19;
 
-import ch19.A4.Context;
-import ch19.A4.State;
-import ch19.A4.NightState;
-import ch19.A4.UrgentState;
-
 public class DayState implements State {
     private static DayState singleton = new DayState();
 

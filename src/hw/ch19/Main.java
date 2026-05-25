@@ -1,7 +1,5 @@
 package hw.ch19;
 
-import ch19.A4.SafeFrame;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("학번: 20240974  이름: 박다인\n");
