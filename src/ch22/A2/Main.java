@@ -28,8 +28,8 @@ public class Main extends JFrame implements MouseMotionListener, WindowListener 
             canvas.repaint();
         });
         undoButton.addActionListener(e -> {
-            history.undo();
-            canvas.repaint();
+            history.undo(); // 하나 빼고
+            canvas.repaint(); // 다시 그리고
         });
 
         Box buttonBox = new Box(BoxLayout.X_AXIS);

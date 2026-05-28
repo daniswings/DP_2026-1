@@ -45,19 +45,22 @@ public class Main extends JFrame implements MouseMotionListener, WindowListener 
         System.out.println("mouseMoved: " + e.getPoint());
     }
 
+    // 커맨드 패턴의 핵심 - 명령어 객체 DrawCommand 객체를 execute로 실행한다
     @Override
     public void mouseDragged(MouseEvent e) {
-        Command cmd = new DrawCommand(canvas, e.getPoint());
-        history.append(cmd);
-        cmd.execute();
+        Command cmd = new DrawCommand(canvas, e.getPoint()); //그리기 명령 객체가 생성됨
+        history.append(cmd); // 그리기 명령이 이력에 추가됨
+        cmd.execute(); // 그리기 명령을 실행함
     }
 
     // WindowListener용 
     @Override
+    // windowClosing 하나만 구현해주면 익명의 내부 클래스가 만들어짐 -> 코드가 훨씬 간략해짐
     public void windowClosing(WindowEvent e) {
-        System.exit(0);
+        System.exit(0); // 종료시킴
     }
 
+    // 하는 일이 없어도 WindowLister를 구현해야 하므로 빈칸 { }로 놔둠
     @Override public void windowActivated(WindowEvent e) {}
     @Override public void windowClosed(WindowEvent e) {}
     @Override public void windowDeactivated(WindowEvent e) {}
