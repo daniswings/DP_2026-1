@@ -13,7 +13,7 @@ public class MacroCommand implements Command {
     // 실행 
     @Override
     public void execute() {
-        // [요구사항 Step 4] 꼬리부터 순서대로 실행하도록 descendingIterator 사용
+        // 꼬리부터 순서대로 실행하도록 descendingIterator 사용
         Iterator<Command> it = commands.descendingIterator();
         while (it.hasNext()) {
             it.next().execute();
