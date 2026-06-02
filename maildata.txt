@@ -1,0 +1,8 @@
+hyuki@example.com=Hiroshi Yuki
+youngjin@example.com=Kim Youngjin
+dojun@example.com=dojun
+gildong@example.com=Hong Gildong
+dain@duksung.ac.kr=Park Da In
+
+
+// 키와 데이터 형태로 값 저장

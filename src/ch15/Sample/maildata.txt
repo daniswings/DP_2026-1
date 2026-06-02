@@ -2,3 +2,9 @@ hyuki@example.com=Hiroshi Yuki
 youngjin@example.com=Kim Youngjin
 dojun@example.com=dojun
 gildong@example.com=Hong Gildong
+dain@duksung.ac.kr=Park Da In
+
+
+// 키와 데이터 형태로 값 저장
+// maildata.txt를 이 위치에 둔 채로 main.java 실행 시 지정된 파일을 찾을 수 없습니다라고 뜸
+// -> 최상단 DP-2026-1 폴더 아래에 복붙해야 함

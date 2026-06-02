@@ -17,7 +17,7 @@ public abstract class Support { // 다른 서포트들의 부모, 추상 클래�
         return next; // 인자로 들어온 뒷사람을 반환함
     }
 
-    // 트러블 해결 절차를 결정한다
+    // 트러블 해결 절차를 결정한다 - 템플릿 메소드가 적용된 메소드
     public void support(Trouble trouble) {
         if (resolve(trouble)) { // 내가 해결을 시도
             done(trouble); // 성공 시 해결했다고 선언
