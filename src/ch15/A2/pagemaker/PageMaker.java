@@ -29,10 +29,13 @@ public class PageMaker {
             HtmlWriter writer = new HtmlWriter(new FileWriter(filename));
             writer.title("Link page");
             Properties mailprop = Database.getProperties("maildata");
+
+            // maildata.txt 파일에 있는 모든 이메일 주소와 사용자 이름을 링크로 출력
             for (String mailaddr: mailprop.stringPropertyNames()) {
                 String username = mailprop.getProperty(mailaddr, "(unknown)");
                 writer.mailto(mailaddr, username);
             }
+            
             writer.close();
             System.out.println(filename + " is created.");
         } catch (IOException e) {

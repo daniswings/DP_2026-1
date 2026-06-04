@@ -31,6 +31,7 @@ public class HtmlWriter {
 
     // 링크 출력
     public void link(String href, String caption) throws IOException {
+        // 주의: 큰 따옴표 내 큰 따옴표를 표현할 땐 \"로 표현
         paragraph("<a href=\"" + href + "\">" + caption + "</a>");
     }
 
